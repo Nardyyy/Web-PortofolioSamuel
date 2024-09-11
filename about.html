@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Samuel Bonardy Hutagalung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Web Portofolio</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="overview.html">Overview</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="about-content">
+                    <div class="slide-in">
+                        <h1>About Me</h1>
+                        <p>Saya, Samuel Bonardy Hutagalung adalah seorang Mahasiswa Universitas Sumatera Utara Fakultas Vokasi Prodi Teknik Informatika Stambuk 2023. Saya sekarang sudah menduduki semester 3 sebagai mahasiswa Teknik Informatika, disini tujuan saya adalah untuk menjadi seorang pengembang web yang kompeten dan inovatif. Saya berharap dengan adanya web portofolio ini semua dapat mengenal saya lebih jauh.
+                        Saya selalu bersemangat untuk belajar teknologi baru dan mengaplikasikannya dalam proyek-proyek yang menantang. Selain coding, saya juga menikmati berbagai macam bidang olahraga seperti sepak bola, futsal, dan lari.</p>
+                    </div>
+                    <div class="slide-in delay-1">
+                        <div class="slide-in delay-2">
+                            <h2>Pendidikan</h2>
+                            <table>
+                                <tr>
+                                    <th>Tahun</th>
+                                    <th>Jenjang</th>
+                                    <th>Jabatan</th>
+                                </tr>
+                                <tr>
+                                    <td>2023 - Sekarang</td>
+                                    <td>Universitas Sumatera Utara</td>
+                                    <td>Mahasiswa</td>
+                                </tr>
+                                <tr></tr>
+                                    <td>2020 - 2023</td>
+                                    <td>SMK Negeri 1 Sidikalang</td>
+                                    <td>Pelajar</td>
+                                </tr>
+                                <tr></tr>
+                                    <td>2017 - 2020</td>
+                                    <td>SMP Santu Paulus Sidikalang</td>
+                                    <td>Pelajar</td>
+                                </tr>
+                                <tr>
+                                    <td>2011 - 2017</td>
+                                    <td>SD Santo Yosef Sidikalang</td>
+                                    <td>Pelajar</td>
+                                </tr>
+                                <tr>
+                                    <td>2010 - 2011</td>
+                                    <td>TK Santa Maria Sidikalang</td>
+                                    <td>Pelajar</td>
+                                </tr>
+                                <!-- Add more rows as necessary -->
+                            </table>
+                        </div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML & CSS Dasar</li>
+                            <li>Jaringan Komputer Dasar</li>
+                            <li>Konfigurasi access point dan mikrotik</li>
+                            <li>Pemecahan Masalah dan Berpikir Logis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

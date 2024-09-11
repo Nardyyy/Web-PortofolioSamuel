@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Situs Web Portofolio Responsif</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Web Portofolio</div>
+                </div>
+                <nav>
+                    <nav aria-label="Main Navigation">
+                        <div class="togglebtn" aria-label="Menu Toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="overview.html">Overview</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="sam.jpeg" alt="Foto Samuel Bonardy Hutagalung">
+                 </div>
+                 <div class="hero-text slide-in delay-1">
+                    <h5>Hi I'm <span class="input">Mahasiswa Universitas Sumatera Utara</span></h5>
+                    <h1>Samuel Bonardy Hutagalung</h1>
+                    <p>Saya Mahasiswa Universitas Sumatera Utara Fakultas Vokasi Prodi Teknik Informatika Stambuk 2023
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">NIM : 231712043</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/share/Qe8xnXdERVxf6vqZ/?mibextid=qi2Omg" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/samuel_bonardy?igsh=MXhrdHY1OGdyeGFidg==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Brixyy1063616?t=l-i0kinVtEArINstxa6JCg&s=08" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://youtube.com/@samuelbonardyhutagalung?si=P_A0yYMHCaopyWye" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Mahasiswa Universitas Sumatera Utara","Stambuk 2023","Kom A"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
